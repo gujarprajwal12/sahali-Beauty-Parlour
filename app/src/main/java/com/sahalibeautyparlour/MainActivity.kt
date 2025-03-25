@@ -15,6 +15,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.sahalibeautyparlour.Presentation.Apicall
 import com.sahalibeautyparlour.Presentation.HomeScreen
 import com.sahalibeautyparlour.Presentation.SplashScreen
 
@@ -28,10 +29,12 @@ class MainActivity : ComponentActivity() {
         setContent {
             val navController = rememberNavController()
             AppNavigation(navController)
-
         }
+
+
     }
 }
+
 
 @Composable
 fun AppNavigation(navController: NavHostController) {

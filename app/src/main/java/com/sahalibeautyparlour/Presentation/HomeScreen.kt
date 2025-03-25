@@ -2,6 +2,7 @@ package com.sahalibeautyparlour.Presentation
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -17,6 +18,7 @@ fun HomeScreen() {
         contentAlignment = Alignment.Center
     ) {
         Text(text = "Welcome to Home Screen!", fontSize = MaterialTheme.typography.headlineMedium.fontSize)
+
     }
 }
 

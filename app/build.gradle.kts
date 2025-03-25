@@ -59,9 +59,27 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
+  //room
+    implementation(libs.room.runtime)
+    implementation(libs.room.ktx)
+
+
+    // Coroutines
+    implementation(libs.coroutines.core)
+    implementation(libs.coroutines.android)
+
     // Retrofit
-    implementation("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation("com.squareup.retrofit2:converter-moshi:2.9.0")
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.gson)
+    implementation(libs.okhttp.logging)
+
+    // Hilt
+    implementation(libs.hilt.android)
+    // Coil (Image Loading)
+    implementation(libs.coil)
+
+    implementation(libs.timber)
+
 
 
 
@@ -69,20 +87,4 @@ dependencies {
     implementation("androidx.navigation:navigation-compose:2.7.7")
 
 
-
-    // Navigation Component for Compose
-    implementation("androidx.navigation:navigation-compose:2.7.7")
-
-    // LiveData & ViewModel support
-    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.7.0")
-
-    // For animations
-    implementation("androidx.compose.animation:animation")
-
-    // For preview and debugging
-    debugImplementation("androidx.compose.ui:ui-tooling")
-
-    // Testing (Optional)
-    androidTestImplementation("androidx.compose.ui:ui-test-junit4")
-    debugImplementation("androidx.compose.ui:ui-test-manifest")
 }
